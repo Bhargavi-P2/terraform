@@ -1,11 +1,10 @@
 resource "aws_instance" "roboshop" {
-    ami         = "ami-0220d79f3f480ecf5"
-    instance_type = "t3.micro"
+    ami         = var.ami_id # left and right side names no need to be same
+    instance_type = var.instance_type
     vpc_security_group_ids = [aws_security_group.allow_all.id ]
 
-    tags = {
-        Name = "HelloWorld"
-    }  
+    tags = var.ec2_tags
+
 }
 
 
