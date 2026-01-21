@@ -44,6 +44,6 @@ variable "sg_tags" {
     }
 }
 
-variable "envinorment"{
-    default = "prod"
+variable "environment" {
+    
 }
