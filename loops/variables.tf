@@ -11,7 +11,7 @@ variable "instance_type" {
 variable "ec2_tags" {
     type = map(string)
     default = {
-        Name = "HelloWorld"
+        Name = "Roboshop"
         Purpose = "Variables-demo"
     }
 }
@@ -46,3 +46,16 @@ variable "sg_tags" {
 variable "environment"{
     default = "prod"
 }
+
+variable "instances" {
+    default = ["mongodb", "redis", "mysql", "rabbitmq"]
+}
+
+variable "zone_id"{
+    default = "Z01297013K7I993PSBSGS"
+}
+
+variable "domain_name"{
+    default = "bhargavi.xyz"
+}
+

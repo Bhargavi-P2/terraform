@@ -43,7 +43,3 @@ variable "sg_tags" {
         Name = "allow-all"
     }
 }
-
-variable "envinorment"{
-    default = "prod"
-}
